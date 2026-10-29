@@ -1,0 +1,102 @@
+/**
+ * ============================================================
+ * FILE: src/assets/styles/base.css
+ * TÁC DỤNG:
+ *   CSS nền toàn cục: reset trình duyệt, font, màu nền, một số class tiện ích.
+ *   Được import 1 lần trong main.js.
+ * CÁCH DÙNG:
+ *   Class tiện ích có sẵn:
+ *     .page          → khung trang (nền trắng, bo góc, padding)
+ *     .page-header   → hàng tiêu đề trang + nút bên phải
+ *     .toolbar       → hàng công cụ (tìm kiếm, lọc, nút)
+ *     .text-muted, .text-danger, .text-right, .text-center
+ *   Style riêng của component viết trong <style scoped> của component đó.
+ * ============================================================
+ */
+@import './variables.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: 1.5;
+  color: var(--color-text);
+  background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-weight: 600;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+/* ===== Layout tiện ích ===== */
+.page {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  padding: var(--space-5);
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.page-header h1 {
+  font-size: 20px;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.toolbar__spacer {
+  flex: 1;
+}
+
+/* ===== Chữ ===== */
+.text-muted {
+  color: var(--color-text-muted);
+}
+.text-danger {
+  color: var(--color-danger);
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
