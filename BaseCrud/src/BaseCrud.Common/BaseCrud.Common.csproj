@@ -1,0 +1,3 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Entity, model query, exception, response dùng chung. Không phụ thuộc tầng nào. -->
+</Project>

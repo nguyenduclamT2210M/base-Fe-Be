@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <!-- Controller + DI. Tham chiếu DL chỉ để đăng ký DI (composition root). -->
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaseCrud.Common\BaseCrud.Common.csproj" />
+    <ProjectReference Include="..\BaseCrud.IDL\BaseCrud.IDL.csproj" />
+    <ProjectReference Include="..\BaseCrud.DL\BaseCrud.DL.csproj" />
+    <ProjectReference Include="..\BaseCrud.IBL\BaseCrud.IBL.csproj" />
+    <ProjectReference Include="..\BaseCrud.BL\BaseCrud.BL.csproj" />
+  </ItemGroup>
+</Project>

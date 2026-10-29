@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Data Layer: ADO.NET thuần (Microsoft.Data.SqlClient), không ORM. -->
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaseCrud.Common\BaseCrud.Common.csproj" />
+    <ProjectReference Include="..\BaseCrud.IDL\BaseCrud.IDL.csproj" />
+  </ItemGroup>
+</Project>

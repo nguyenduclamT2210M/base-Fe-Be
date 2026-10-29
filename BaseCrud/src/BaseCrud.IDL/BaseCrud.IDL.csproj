@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Interface tầng Data Layer. BL chỉ biết tới project này, không biết SqlClient. -->
+  <ItemGroup>
+    <ProjectReference Include="..\BaseCrud.Common\BaseCrud.Common.csproj" />
+  </ItemGroup>
+</Project>

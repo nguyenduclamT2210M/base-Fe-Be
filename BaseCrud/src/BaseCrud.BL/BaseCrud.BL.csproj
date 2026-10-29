@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Business Layer: validate, gán audit, transaction, nghiệp vụ. Chỉ phụ thuộc IDL (interface), không phụ thuộc DL. -->
+  <ItemGroup>
+    <ProjectReference Include="..\BaseCrud.Common\BaseCrud.Common.csproj" />
+    <ProjectReference Include="..\BaseCrud.IDL\BaseCrud.IDL.csproj" />
+    <ProjectReference Include="..\BaseCrud.IBL\BaseCrud.IBL.csproj" />
+  </ItemGroup>
+</Project>

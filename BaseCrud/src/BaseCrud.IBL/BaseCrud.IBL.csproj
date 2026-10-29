@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Interface tầng Business Layer. Controller chỉ biết tới project này. -->
+  <ItemGroup>
+    <ProjectReference Include="..\BaseCrud.Common\BaseCrud.Common.csproj" />
+  </ItemGroup>
+</Project>
